@@ -1,9 +1,9 @@
 class MnHeader extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = ` <head>
+  connectedCallback() {
+    this.innerHTML = ` <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Registrar Ingresos</title>
+    <title>Inspirar</title>
     <!-- Main Header and Footer -->
     <script type=module src=main.js></script>
   
@@ -19,23 +19,10 @@ class MnHeader extends HTMLElement {
   </head>
 <header>
 <section class="section home-5-bg" id="home">
-    <div id="particles-js"></div>
-    <div class="bg-overlay" style="background-color: rgba(26, 188, 156, 0.2);></div>
-    <div class="home-center">
-        <div class="home-desc-center">
-            <div class="container">
-                <div class="justify-content-center row">
-                    <div class="col-lg-7">
-                        <div class="mt-40 text-center home-5-content">
-                            <div class="home-icon mb-4"><i class="mdi mdi-pinwheel mdi-spin text-white h1"></i></div>
-<h1 id="myH2" class="font-weight-normal home-5-title mb-0 text-dark" style="font-family: sans-serif"><strong>Control de Gastos</strong></h1>
-<p class="text-white-70 mt-4 f-15 mb-0"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="jumbotron jumbotron-fluid bg-white">
+<div class="container">
+<img src="Images/Header.jpg" class="img-fluid" alt="Responsive image">
+</div> 
 </section> 
 <script>
 document.getElementById("myH2").style.color = "red";
@@ -44,32 +31,57 @@ document.getElementById("myH2").style.color = "red";
 <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
 </svg>
 </div>`;
-	}
+  }
 }
 
 customElements.define('mn-header', MnHeader);
 
 class MnFooter extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
     <div>
 				<svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
 				</svg>
 			</div>
   <footer">
   <section class="">
-    <div class="container p-4 pb-0">
-      <section class="nav justify-content-center border-top">
-      <a href="index.jsp" class="nav-link px-2 text-muted">Home</a>
-      </section>
-    </div>
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+		  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<h1>Mision</h1>
+			<p>Brindar acompañamiento psicológico integral que atienda las necesidades personales, sociales y laborales; siempre enfocados en el individuo como pilar de la comunidad y creador de progreso.  </p>
+		  </div>
+		  <div class="carousel-item">
+			<h1>Vision</h1>
+			<p>Brindar acompañamiento psicológico integral que atienda las necesidades personales, sociales y laborales; siempre enfocados en el individuo como pilar de la comunidad y creador de progreso.  </p>
+		  </div>
+		  <div class="carousel-item">
+			<h1>Contáctenos</h1>
+			<p>+57(322)427-6903</p>
+			<p>inspirarpsicologiam@gmail.com</p>
+		  </div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="sr-only">Next</span>
+		</a>
+	  </div> 
+    © 2022 Copyright
     </div>
     </section>
   </footer>`;
 
-	}
+  }
 }
 
 customElements.define('mn-footer', MnFooter);
