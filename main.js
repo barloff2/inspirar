@@ -24,10 +24,6 @@ class MnHeader extends HTMLElement {
 <img src="Images/Header.jpg" class="img-fluid" alt="Responsive image">
 </div> 
 </section> 
-<script>
-document.getElementById("myH2").style.color = "red";
-</script>
-</header> <div>
 <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
 </svg>
 </div>`;
