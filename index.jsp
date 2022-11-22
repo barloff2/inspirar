@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Registrar Ingresos</title>
+		<title>Login Inspirar</title>
 		<!-- Main Header and Footer -->
 		<script type=module src=main.js></script>
 	
@@ -38,7 +38,7 @@
 				  <div class="col-md-6 col-lg-7 d-flex align-items-center">
 					<div class="card-body p-4 p-lg-5 text-black">
 	  
-					  <form method="get" action="ServletIngreso">
+					  <form method="get" action="LoginServlet">
 	  
 						<div class="d-flex align-items-center mb-3 pb-1">
 						  <span class="h1 fw-bold mb-0"><img src="Images/Logo.jpeg" class="img-fluid" alt="Responsive image"

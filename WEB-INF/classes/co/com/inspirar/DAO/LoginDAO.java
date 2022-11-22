@@ -8,18 +8,23 @@ import java.sql.SQLException;
 import co.com.inspirar.modelo.LoginBean;
 
 public class LoginDAO {
-
+    protected Connection conectar;
+    private final String URL = "proyecto.db";
 	public boolean validate(LoginBean loginBean) throws ClassNotFoundException {
 		boolean status = false;
 
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("org.sqlite.JDBC");
 
 		try (Connection connection = DriverManager
-				.getConnection("jdbc:mysql://localhost:3306/mysql_database?useSSL=false", "root", "root");
-
+				.getConnection("jdbc:sqlite:" + URL);
 				// Step 2:Create a statement using connection object
 				PreparedStatement preparedStatement = connection
-						.prepareStatement("select * from login where username = ? and password = ? ")) {
+						.prepareStatement("select login_usuario, password_usuario from Usuario where username = ? and password = ? ")) {
+/*SELECT tipo_rol, login_usuario, password_usuario
+FROM fakeUsuario c, fakeRol t, fakeUsuario_Rol d
+WHERE c.id_usuario=d.id_usuario
+AND d.id_rol=t.id_rol */
+
 			preparedStatement.setString(1, loginBean.getUsername());
 			preparedStatement.setString(2, loginBean.getPassword());
 
