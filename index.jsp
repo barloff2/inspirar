@@ -25,56 +25,52 @@
 	<!-- Javascript Header-->
 	<mn-header></mn-header>
 	<!-- Bootstrap only -->
-	<main class="html">
-		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-xlg-start">
-			<ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-				<!-- Botón Estado -->
-				<li>
-					<button class="btn btn-outline-secondary mr-2">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-							class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
-							<path
-								d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z" />
-						</svg>
-						<a href="ServletEstado" class="nav-link text-blue" style="text-decoration:none"> <svg
-								class="bi d-block mx-auto mb-1" width="20" height="15">
-								<use xlink:href="#home"></use>
-							</svg> &nbspEstado&nbsp
-						</a>
-					</button>
-				</li>
-				<!-- Botón Estado -->
-				<li>
-					<button class="btn btn-outline-secondary mr-2">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-							class="bi bi-node-plus-fill" viewBox="0 0 16 16">
-							<path
-								d="M11 13a5 5 0 1 0-4.975-5.5H4A1.5 1.5 0 0 0 2.5 6h-1A1.5 1.5 0 0 0 0 7.5v1A1.5 1.5 0 0 0 1.5 10h1A1.5 1.5 0 0 0 4 8.5h2.025A5 5 0 0 0 11 13zm.5-7.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2a.5.5 0 0 1 1 0z" />
-						</svg>
-						<a href="Ingresos.html" class="nav-link text-blue" style="text-decoration:none"> <svg
-								class="bi d-block mx-auto mb-1" width="20" height="15">
-								<use xlink:href="#speedometer2"></use>
-							</svg> Ingresos
-						</a>
-					</button>
-				</li>
-				<!-- Botón Gastos -->
-				<li>
-					<button class="btn btn-outline-secondary">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-							class="bi bi-node-minus-fill" viewBox="0 0 16 16">
-							<path fill-rule="evenodd"
-								d="M16 8a5 5 0 0 1-9.975.5H4A1.5 1.5 0 0 1 2.5 10h-1A1.5 1.5 0 0 1 0 8.5v-1A1.5 1.5 0 0 1 1.5 6h1A1.5 1.5 0 0 1 4 7.5h2.025A5 5 0 0 1 16 8zm-2 0a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5A.5.5 0 0 0 14 8z" />
-						</svg>
-						<a href="Gastos.html" class="nav-link text-blue" style="text-decoration:none"> <svg
-								class="bi d-block mx-auto mb-1" width="20" height="15">
-								<use xlink:href="#table"></use>
-							</svg>&nbspGastos&nbsp
-						</a>
-					</button>
-				</li>
-			</ul>
+	<section class="vh-100" style="background-color: #61729a;">
+		<div class="container py-5 h-150">
+		  <div class="row d-flex justify-content-center align-items-center h-100">
+			<div class="col col-xl-10">
+			  <div class="card" style="border-radius: 1rem;">
+				<div class="row g-0">
+				  <div class="col-md-6 col-lg-5 d-none d-md-block">
+					<img src="Images/Login.jpg" class="img-fluid" alt="Responsive image"
+					  alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+				  </div>
+				  <div class="col-md-6 col-lg-7 d-flex align-items-center">
+					<div class="card-body p-4 p-lg-5 text-black">
+	  
+					  <form method="get" action="ServletIngreso">
+	  
+						<div class="d-flex align-items-center mb-3 pb-1">
+						  <span class="h1 fw-bold mb-0"><img src="Images/Logo.jpeg" class="img-fluid" alt="Responsive image"
+							alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" /></span>
+						</div>
+	  
+						<h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+	  
+						<div class="form-outline mb-4">
+						  <input type="email" id="username" name="username" class="form-control form-control-lg" />
+						  <label class="form-label" for="username">Email address</label>
+						</div>
+	  
+						<div class="form-outline mb-4">
+						  <input type="password" id="password" name="password" class="form-control form-control-lg" />
+						  <label class="form-label" for="password">Password</label>
+						</div>
+	  
+						<div class="pt-1 mb-4">
+						  <button class="btn btn-dark btn-lg btn-block" type="button">Login</button>
+						</div>
+
+					  </form>
+	  
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
 		</div>
+	  </section>
 	</main>
 <!-- JavaScript footer -->
 	<mn-footer></mn-footer>
