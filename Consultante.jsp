@@ -1,3 +1,4 @@
+<%@page import="modelo.Consultante"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 	<!DOCTYPE html>
@@ -23,8 +24,9 @@
 		</head>
 	
 	<body>
-		<!-- Javascript Header-->
-		<mn-header></mn-header>
+	<!-- Javascript Header-->
+	<mn-header></mn-header>
+	<!-- Body content  -->
 			<div class="card">
 				<nav class="nav justify-content-center bg-secundary text-secondary"">
 				<a class="nav-link" href="CrearConsultante.jsp"><h4>Crear Consultante</h4></a>

@@ -30,40 +30,38 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title"><center>Consulta Paciente</center></h3>
+                <h3 class="card-title"><center>Consulta</center></h3>
                 <br>
-                <form method="POST" enctype="multipart/form-data">
-                    <label for="archivo"><strong> Adjuntar Genograma: </strong></label>  
-                    <input name="genograma" class="btn btn-primary"  type="file" require/>
-                    <button type="submit" class="btn btn-primary" role="button" style="float:right;" value="Cancelar" name="accion"><i class="fas fa-window-close"></i> Cancelar</button>
-                    <button type="submit" class="btn btn-primary" role="button" style="float:right;" value="Guardar" name="accion"><i class="fas fa-save"> Guardar</i></button>
+                <form enctype="multipart/form-data">
+                    <label><strong>Descargar Genograma: </strong></label>
+                    <!--HREF y DOWNLOAD PARA TRAER GENOGRAMA, HAY QUE ARREGLAR LA VARIABLE QUE GUARDA EL GENOGRAMA-->
+                    <a href="Genograma/${}" download="${}" ><i class="fas fa-download"></i></a>
                     <div class="row">
                         <div class="col-md-6">
-                            <!--Fecha-->
     
                             <!--Motivo Consulta-->
                             <br><br>
                             <label for="motivoConsulta">Motivo Consulta</label>
                             <br>
-                            <textarea name="motivoConsulta" id="motivoConsulta" cols="62" rows="10" maxlength="1000"></textarea>
+                            <textarea readonly name="motivoConsulta" id="motivoConsulta" cols="62" rows="10" maxlength="1000"> ${Consulta.motivo} </textarea>
     
                             <!--Antecedentes clinicos Patologicos-->                        
                             <br><br>
                             <label for="antecedentesCliPat">Antecedentes Clinicos Patologicos</label>
                             <br>
-                            <textarea name="antecedentesCliPat" id="antecedentesCliPat" cols="62" rows="10" maxlength="1000"></textarea>
+                            <textarea readonly name="antecedentesCliPat" id="antecedentesCliPat" cols="62" rows="10" maxlength="1000"> ${Consulta.antecedentesCliPat} </textarea>
     
                             <!-- Examen Mental Inicial -->
                             <br><br>
                             <label for="examenMentIni">Examen Mental Inicial</label>
                             <br>
-                            <textarea name="examenMentIni" id="examenMentIni" cols="62" rows="10" maxlength="1000"></textarea>  
+                            <textarea readonly name="examenMentIni" id="examenMentIni" cols="62" rows="10" maxlength="1000">${Consulta.examenMentIni}</textarea>  
     
                             <!--Notas-->
                             <br><br>
                             <label for="notas">Notas</label>
                             <br>
-                            <textarea name="notas" id="notas" cols="62" rows="10" maxlength="2000" require></textarea>
+                            <textarea readonly name="notas" id="notas" cols="62" rows="10" maxlength="2000" require>${Consulta.notas}</textarea>
     
                         </div>
                         <div class="col-md-6">
@@ -71,31 +69,31 @@
                             <br><br>
                             <label for="hProblemaActual">Historia del Problema Actual</label>
                             <br>
-                            <textarea name="hProblemaActual" id="hProblemaActual" cols="62" rows="10" maxlength="1000"></textarea>
+                            <textarea readonly name="hProblemaActual" id="hProblemaActual" cols="62" rows="10" maxlength="1000" >${Consulta.hProblemaActual}</textarea>
     
                             <!--Antecedentes Clinicos no Patologicos-->
                             <br><br>
                             <label for="antecedentesCliNoPat">Antecedenetes Clinicos no Patologicos</label>
                             <br>
-                            <textarea name="antecedentesCliNoPat" id="antecedentesCliNoPat" cols="62" rows="10" maxlength="1000"></textarea>
+                            <textarea readonly name="antecedentesCliNoPat" id="antecedentesCliNoPat" cols="62" rows="10" maxlength="1000">${Consulta.antecedentesCliNoPat}</textarea>
     
                             <!--Plan Terapeutico-->
                             <br><br>
                             <label for="planTerapeutico">Plan Terapeutico</label>
                             <br>
-                            <textarea name="planTerapeutico" id="planTerapeutico" cols="62" rows="10" maxlength="1000"></textarea>
+                            <textarea readonly name="planTerapeutico" id="planTerapeutico" cols="62" rows="10" maxlength="1000">${Consulta.planTerapeutico}</textarea>
     
                             <!--Historia Familiar-->
                             <br><br>
                             <label for="historiaFamiliar">Historia Familiar</label>
                             <br>
-                            <textarea name="historiaFamiliar" id="historiaFamiliar" cols="62" rows="10" maxlength="1500"></textarea>
+                            <textarea readonly name="historiaFamiliar" id="historiaFamiliar" cols="62" rows="10" maxlength="1500">${Consulta.historiaFamiliar}</textarea>
                         </div>
                     </div>   
                     <br><br>
                     <label for="diagDif"><center>Diagnostico Diferencial</center></label>   
                     <br>
-                    <textarea name="diagDif" id="diagDif" cols="130" rows="10"></textarea>              
+                    <textarea readonly name="diagDif" id="diagDif" cols="130" rows="10">${Consulta.diagDif}</textarea>              
                 </form>
             </div>
         </div>

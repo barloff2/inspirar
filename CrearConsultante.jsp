@@ -1,3 +1,4 @@
+<%@page import="modelo.Consultante"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -25,6 +26,7 @@
 <body>
 	<!-- Javascript Header-->
 	<mn-header></mn-header>
+	<!-- Body content  -->
      <!--Card que contiene al formiulario-->
      <div class="col-md-6">
         <div class="card">
@@ -185,7 +187,7 @@
                 </tr>
             </thead>
                     <!--For Each para traer la tabla-->
-                    <jsp:useBean id="mitabla" scope="application" class="modelo.Magic" />
+                    <jsp:useBean id="mitabla" scope="application" class="modelo.Consultante" />
                     <tbody>
                         <tr>
                             <c:forEach items="${mitabla.}" begin="0" end="${mitabla..}" var="usuario">

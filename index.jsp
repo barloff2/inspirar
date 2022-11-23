@@ -3,12 +3,13 @@
 <html lang="">
 
 	<head>
+		<!--Aquí va el head importado.-->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Login Inspirar</title>
 		<!-- Main Header and Footer -->
 		<script type=module src=main.js></script>
-	
+		
 		<!-- Bootstrap only -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
 			integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -18,13 +19,13 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
 			crossorigin="anonymous"></script>
-	
+			
 	</head>
 
 <body>
 	<!-- Javascript Header-->
 	<mn-header></mn-header>
-	<!-- Bootstrap only -->
+	<!-- Body content  -->
 	<section class="vh-100" style="background-color: #61729a;">
 		<div class="container py-5 h-150">
 		  <div class="row d-flex justify-content-center align-items-center h-100">
