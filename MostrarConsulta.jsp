@@ -38,42 +38,42 @@
                             <br>
                             <form method="POST" enctype="multipart/form-data">
                                 <label for="archivo"><strong> Adjuntar Genograma: </strong></label>
-                                <input name="genograma" class="btn btn-outline-primary" type="file" require />
+                                <input name="genograma" class="form-control-file btn btn-outline-primary" type="file" require /> <br> <br>
                                 <button type="submit" class="btn btn-outline-primary mr-1" role="button"
                                     style="float:right;" value="Cancelar" name="accion"><i
                                         class="fas fa-window-close"></i> Cancelar</button>
                                 <button type="submit" class="btn btn-outline-primary mr-1" role="button"
                                     style="float:right;" value="Guardar" name="accion"><i class="fas fa-save">
                                         Guardar</i></button>
+                                        <br><br>
                                 <div class="row text-center">
                                     <div class="col-md-6">
-
-                                        <!--Motivo Consulta-->
+                                       <!--Motivo Consulta-->
                                         <br><br>
                                         <label for="motivoConsulta">Motivo Consulta</label>
                                         <br>
-                                        <textarea name="motivoConsulta" id="motivoConsulta" cols="62" rows="10"
+                                        <textarea class="form-control" name="motivoConsulta" id="motivoConsulta" cols="62" rows="10"
                                             maxlength="1000"></textarea>
 
                                         <!--Antecedentes clinicos Patologicos-->
                                         <br><br>
                                         <label for="antecedentesCliPat">Antecedentes Clinicos Patologicos</label>
                                         <br>
-                                        <textarea name="antecedentesCliPat" id="antecedentesCliPat" cols="62" rows="10"
+                                        <textarea class="form-control" name="antecedentesCliPat" id="antecedentesCliPat" cols="62" rows="10"
                                             maxlength="1000"></textarea>
 
                                         <!-- Examen Mental Inicial -->
                                         <br><br>
                                         <label for="examenMentIni">Examen Mental Inicial</label>
                                         <br>
-                                        <textarea name="examenMentIni" id="examenMentIni" cols="62" rows="10"
+                                        <textarea class="form-control" name="examenMentIni" id="examenMentIni" cols="62" rows="10"
                                             maxlength="1000"></textarea>
 
                                         <!--Notas-->
                                         <br><br>
                                         <label for="notas">Notas</label>
                                         <br>
-                                        <textarea name="notas" id="notas" cols="62" rows="10" maxlength="2000"
+                                        <textarea class="form-control" name="notas" id="notas" cols="62" rows="10" maxlength="2000"
                                             require></textarea>
 
                                     </div>
@@ -82,28 +82,28 @@
                                         <br><br>
                                         <label for="hProblemaActual">Historia del Problema Actual</label>
                                         <br>
-                                        <textarea name="hProblemaActual" id="hProblemaActual" cols="62" rows="10"
+                                        <textarea class="form-control" name="hProblemaActual" id="hProblemaActual" cols="62" rows="10"
                                             maxlength="1000"></textarea>
 
                                         <!--Antecedentes Clinicos no Patologicos-->
                                         <br><br>
                                         <label for="antecedentesCliNoPat">Antecedenetes Clinicos no Patologicos</label>
                                         <br>
-                                        <textarea name="antecedentesCliNoPat" id="antecedentesCliNoPat" cols="62"
+                                        <textarea class="form-control" name="antecedentesCliNoPat" id="antecedentesCliNoPat" cols="62"
                                             rows="10" maxlength="1000"></textarea>
 
                                         <!--Plan Terapeutico-->
                                         <br><br>
                                         <label for="planTerapeutico">Plan Terapeutico</label>
                                         <br>
-                                        <textarea name="planTerapeutico" id="planTerapeutico" cols="62" rows="10"
+                                        <textarea class="form-control" name="planTerapeutico" id="planTerapeutico" cols="62" rows="10"
                                             maxlength="1000"></textarea>
 
                                         <!--Historia Familiar-->
                                         <br><br>
                                         <label for="historiaFamiliar">Historia Familiar</label>
                                         <br>
-                                        <textarea name="historiaFamiliar" id="historiaFamiliar" cols="62" rows="10"
+                                        <textarea class="form-control" name="historiaFamiliar" id="historiaFamiliar" cols="62" rows="10"
                                             maxlength="1500"></textarea>
                                     </div>
                                 </div>
@@ -113,7 +113,7 @@
                                         <center>Diagnostico Diferencial</center>
                                     </label>
                                     <br>
-                                    <textarea name="diagDif" id="diagDif" cols="130" rows="10"></textarea>
+                                    <textarea class="form-control" name="diagDif" id="diagDif" cols="130" rows="10"></textarea>
                                 </div>
                             </form>
                         </div>

@@ -33,7 +33,7 @@
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-header">
-                            Crear Consultante
+                            Crear Usuarios
                         </div>
                         <div class="card-body">
                             <form method="POST" enctype="multipart/form-data">
@@ -83,14 +83,14 @@
                                 <br>
                                 <!--botones-->
                                 <!-- <?php echo ($accion=="Seleccionar")?"disabled":""; ?-->
-                                <button type="submit" name="accion" value="Agregar" class="btn btn-secondary">
+                                <button type="submit" name="accion" value="Agregar" class="btn btn-outline-secondary">
                                     Agregar</button>
                                 <!-- <?php echo ($accion=="Seleccionar")?"disabled":""; ?-->
                                 <button type="submit" name="accion" value="Modificar"
-                                    class="btn btn-secondary">Modificar</button>
+                                    class="btn btn-outline-secondary">Modificar</button>
                                 <!-- <?php echo ($accion=="Seleccionar")?"disabled":""; ?-->
                                 <button type="submit" name="accion" value="Cancelar"
-                                    class="btn btn-secondary">Cancelar</button>
+                                    class="btn btn-outline-secondary">Cancelar</button>
                             </form>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-header">
-                            Consultantes
+                            Usuarios
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered">
@@ -129,9 +129,9 @@
                                                 <input type="hidden" name="txtID" id="txtID"
                                                     value="${usuario.identificacion}">
                                                 <input type="submit" name="accion" value="Seleccionar"
-                                                    class=" btn-outline-warning btn-sm">
+                                                    class=" btn btn-outline-warning btn-sm">
                                                 <input type="submit" name="accion" value="Inactivar"
-                                                    class="btn-outline-danger btn-sm">
+                                                    class="btn btn-outline-danger btn-sm">
 
                                             </form>
                                         </td>
