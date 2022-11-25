@@ -203,7 +203,18 @@
                                             <th>Acciones</th>
                                         </tr>
                                     </thead>
-                                    <!--For Each para traer la tabla-->
+                    <!--For Each para traer la tabla-->
+                    <!--<jsp:useBean id="mitabla" scope="application" class="co.com.inspirar.modelo.Consultante" />
+                    <tbody>
+                        <tr>
+                            <c:forEach items="${mitabla}" begin="0" end="${mitabla}" var="usuario">
+                                <td>
+                                    <c:out value="${usuario.identificacion}" />
+                                </td>
+                                <td>
+                                    <c:out value="${usuario.nombres}" />
+                                </td>
+                            </c:forEach>-->
                                     <jsp:useBean id="mitabla" scope="application" class="modelo.Consultante" />
                                     <tbody>
                                         <tr>
